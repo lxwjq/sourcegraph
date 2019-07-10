@@ -3,7 +3,7 @@
 #
 # $ docker build -f Dockerfile.org-grep -t org-grep .
 # $ docker run --rm=true org-grep github.com/sourcegraph/go-langserver vscode
-FROM python:3-alpine
+FROM python:3-alpine@sha256:fabd15bc1b5c6f4097cabae02122250f51d6fda4ab4729d1ba17f01028a7fc15
 
 RUN pip install requests==2.18.4
 
